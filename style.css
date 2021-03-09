@@ -1,0 +1,229 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Source Serif Pro", serif;
+	background-color: #c5c0dd;
+	font-family: "Open Sans Condensed", sans-serif;
+	letter-spacing: 0.1rem;
+}
+
+h1,
+h2,
+h3 {
+	text-transform: uppercase;
+}
+
+button {
+	color: #ec3c14;
+	text-transform: uppercase;
+}
+
+button:hover {
+	background-color: #c5c0dd;
+	cursor: pointer;
+}
+
+.startPage #infoCont {
+	min-height: 50rem;
+	background-image: url(/img/map.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+main {
+	width: 100vw;
+	height: 100vh;
+	padding: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	color: #ec3c14;
+}
+
+main header {
+	color: #ec3c14;
+	text-transform: uppercase;
+}
+
+main header h1 {
+	font-size: 4rem;
+	line-height: 5rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column wrap;
+	flex-flow: column wrap;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
+main header h1 #stader {
+	border-bottom: 0.4rem solid #ec3c14;
+}
+
+main header nav {
+	font-size: 2.3rem;
+	font-weight: 800;
+	list-style-type: none;
+	color: #ec3c14;
+	text-transform: uppercase;
+}
+
+main header nav ul {
+	list-style-type: none;
+	text-decoration: none;
+	margin: 1rem 0;
+}
+
+main header nav ul:active {
+	color: #a04b4b;
+}
+
+main header nav ul:hover {
+	color: #f07b7b;
+	cursor: pointer;
+}
+
+main header nav ul ul {
+	font-size: 1.5rem;
+	margin-left: 3rem;
+}
+
+main header nav ul ul li:hover {
+	color: #c7acac;
+	cursor: pointer;
+}
+
+main section#infoCont {
+	width: 60%;
+}
+
+main section#infoCont #infoWrapperDiv {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	position: relative;
+}
+
+main section#infoCont #infoWrapperDiv #imgDiv {
+	width: 45%;
+}
+
+main section#infoCont #infoWrapperDiv #imgDiv img {
+	width: 100%;
+	max-height: 70vh;
+	border: 7px solid #ec3c14;
+}
+
+main section#infoCont #infoWrapperDiv #weatherDiv {
+	position: absolute;
+	left: 25%;
+	top: -5rem;
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+	border: 4px solid #ec3c14;
+	-webkit-box-shadow: #ec3c14 4px 4px;
+	box-shadow: #ec3c14 4px 4px;
+	padding: 1.5rem;
+}
+
+main section#infoCont #infoWrapperDiv #weatherDiv h2 {
+	text-align: center;
+	color: #ec3c14;
+	font-size: 2rem;
+}
+
+main section#infoCont #infoWrapperDiv #infoDiv {
+	width: 50%;
+	color: #ec3c14;
+	padding: 2rem;
+}
+
+main section#infoCont #infoWrapperDiv #infoDiv h1 {
+	text-align: left;
+	color: #ec3c14;
+	font-size: 4rem;
+}
+
+main section#infoCont #infoWrapperDiv #infoDiv h2 {
+	text-align: left;
+	color: #ec3c14;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+main section#infoCont #infoWrapperDiv #infoDiv p {
+	font-size: 1.3rem;
+	margin-bottom: 2.5rem;
+}
+
+main section#infoCont #infoWrapperDiv #infoDiv #addCity {
+	font-size: 2rem;
+	border: 3px solid #ec3c14;
+	padding: 0.4rem;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	font-weight: 800;
+	-webkit-box-shadow: 3px 3px 0 #ec3c14;
+	box-shadow: 3px 3px 0 #ec3c14;
+}
+
+main section#infoCont #infoWrapperDiv #infoDiv #addCity:disabled {
+	color: #c7acac;
+	border-color: #c7acac;
+	box-shadow: 3px 3px 0 #c7acac;
+	-webkit-box-shadow: 3px 3px 0 #c7acac;
+}
+
+main aside {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column wrap;
+	flex-flow: column wrap;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	color: #ec3c14;
+	font-weight: 800;
+}
+
+main aside h1 {
+	font-size: 3rem;
+}
+
+main aside .removeCityButton {
+	border: 1px solid #ec3c14;
+	width: 1.3rem;
+	height: 1.3rem;
+	margin-left: 5px;
+	-webkit-box-shadow: 2px 2px 0 #ec3c14;
+	box-shadow: 2px 2px 0 #ec3c14;
+}
+
+main aside .removeAllButton {
+	border: 1px solid #ec3c14;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: 800;
+	padding: 0.4rem;
+	margin: 20px 0 5px;
+	-webkit-box-shadow: 2px 2px 0 #ec3c14;
+	box-shadow: 2px 2px 0 #ec3c14;
+}
+/*# sourceMappingURL=style.css.map */
